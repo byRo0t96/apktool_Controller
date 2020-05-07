@@ -12,7 +12,7 @@ if exist "apktool.jar" (
   goto bat
 ) ELSE (
   echo downloading apktool_2.4.1.jar
-  curl https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.4.1.jar -o apktool.jar
+  powershell -Command "Invoke-WebRequest https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.4.1.jar -OutFile apktool.jar"
   goto bat
 )
 
